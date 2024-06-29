@@ -7,6 +7,12 @@ import SocialSignin from '@/components/shared/SocialSignin';
 const page = () => {
     const handleSignUp = async (event) => {
         event.preventDefault();
+        const newUser = {
+          name: event.target.name.value,
+          email: event.target.email.value,
+          password: event.target.password.value,
+        };
+        console.log(newUser)
       };
     return (
         <div className="container px-24 mx-auto py-24">
